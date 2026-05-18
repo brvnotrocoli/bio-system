@@ -3,7 +3,7 @@
 [ BIO-SYSTEM / DESIGN SYSTEM ]
 
 > module: biosystem.html 
-> version: 0.3
+> version: 0.4
 
 ------------------------------------------------------->
 
@@ -26,10 +26,16 @@
         justify-content: center;
         align-items: baseline;
     }
+    .align-vertical-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .align-center { text-align: center; }
     .grid { display: flex; column-gap: 15px }
     .grid div { width: 100%; }
-    .grid div img { width: 100%; }
+    .grid div img { display: block; }
 
     @media (orientation: portrait) {
         .grid { display: block; column-gap: 15px; }
@@ -52,9 +58,31 @@
         padding-right: 30px;
         border: 0;
         background-color: #e71316;
-        color: white;
+        color: white !important;
     }
     .gen-button-red:hover{
+        background-color: #eee;
+        color: #e71316;
+    }
+    .gen-button-mini-red{
+        transition: all 0.5s ease-in-out;
+        display: inline-block;
+        cursor: pointer;
+        width: auto;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1em;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 45px;
+        padding-right: 45px;
+        border: 0;
+        background-color: #e71316;
+        color: white !important;
+    }
+    .gen-button-mini-red:hover{
         background-color: #eee;
         color: #e71316;
     }
@@ -80,6 +108,13 @@
         margin-block-start: 0;
         margin-block-end: 0;
         padding-inline-start: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-weight: normal;
     }
 
     /* fix aem errors ------------------------------------------------------ */
