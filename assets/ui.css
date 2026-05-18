@@ -1,0 +1,34 @@
+body {
+    font-family: HelveticaNeueLight, Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
+    color: #222 !important;
+    margin: 0;
+    overflow-x: hidden !important;
+    font-size: 16px !important;
+}
+
+.thermofisher-header{ 
+    border-bottom: 1px dashed #ccc;
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+}
+footer{
+    border-top: 1px dashed #ccc;
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.aem{
+    background-color: #eee;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main{
+    background-color: white;
+}
+.logo{
+    display: block;
+    width: 200px;
+}
