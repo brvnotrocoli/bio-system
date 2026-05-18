@@ -22,7 +22,6 @@
             <?php
 
             include "dev.html";
-            include "init.html";
 
             ?>
 

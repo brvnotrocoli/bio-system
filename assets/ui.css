@@ -1,9 +1,12 @@
 body {
-    font-family: HelveticaNeueLight, Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
-    color: #222 !important;
-    margin: 0;
-    overflow-x: hidden !important;
-    font-size: 16px !important;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Segoe UI", "Arial", "sans-serif";
+    font-size: 13px;
+    line-height: 22px;
+    color: #333;
+    background-color: #fff;
+    -ms-overflow-style: scrollbar;
 }
 
 .thermofisher-header{ 
