@@ -1,4 +1,5 @@
 body {
+    margin-top: 0;
     margin-right: 0;
     margin-left: 0;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Segoe UI", "Arial", "sans-serif";
@@ -9,19 +10,14 @@ body {
     -ms-overflow-style: scrollbar;
 }
 
-.thermofisher-header{ 
-    border-bottom: 1px dashed #ccc;
-    border-left: 1px dashed #ccc;
-    border-right: 1px dashed #ccc;
-}
 footer{
-    border-top: 1px dashed #ccc;
-    border-left: 1px dashed #ccc;
-    border-right: 1px dashed #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-top: 1px dashed #222;
+    border-left: 1px dashed #222;
+    border-right: 1px dashed #222;
+    text-align: center;
     height: 80px;
+    font-size: 10px;
+    text-transform: uppercase;
 }
 .aem{
     background-color: #eee;
@@ -34,4 +30,10 @@ main{
 .logo{
     display: block;
     width: 200px;
+}
+
+.thermofisher-header{ 
+    border-bottom: 1px dashed #222;
+    border-left: 1px dashed #222;
+    border-right: 1px dashed #222;
 }
