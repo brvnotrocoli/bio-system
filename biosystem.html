@@ -3,12 +3,15 @@
 [ BIO-SYSTEM / DESIGN SYSTEM ]
 
 > module: biosystem.html 
-> version: 0.2
+> version: 0.3
 
 ------------------------------------------------------->
 
 <style type="text/css">
-    
+    html{
+        scroll-behavior: smooth;
+    }
+
     /* grids  ------------------------------------------------------ */
     .align{
         width: 100%;
@@ -78,6 +81,17 @@
         margin-block-end: 0;
         padding-inline-start: 0;
     }
+
+    /* fix aem errors ------------------------------------------------------ */
+    .form_leftcol{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .radio, .checkbox{
+        padding-left: 0;
+        font-size: 12px;
+    }
 </style>
 
 <!-- thermofisher header hack -------------------------------------------------------->
@@ -88,3 +102,16 @@
     }
 </style>
 <div class="thermofisher-header"></div>
+
+<!-- autoscroll motion -------------------------------------------------------->
+<script type="text/javascript">
+    function goToAndStop(id){
+        const element = document.getElementById(id);
+        const offset = 150;
+        const position = element.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({
+            top: position,
+            behavior: "smooth"
+        });
+    }
+</script>
